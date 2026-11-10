@@ -68,6 +68,14 @@ button {
 .wrap {
   gap: 20px;
 }
+.example ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.example li {
+  border-bottom: 1px solid #f0f0f0;
+}
 .example h4 {
   margin-bottom: 10px;
 }
@@ -83,6 +91,22 @@ input {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.answer button {
+  padding: 5px 10px;
+  font-size: 15px;
+  border: 1px solid #cdd1d5;
+  background-color: #fefefe;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.answer button:hover {
+  background-color: #f4f5f6;
+}
+.answer span {
+  font-size: 15px;
+  color: #a0a0a0;
 }
 .result {
   font-size: 15px;
