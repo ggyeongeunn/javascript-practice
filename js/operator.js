@@ -130,8 +130,8 @@ preSubBtn.addEventListener('click', () => {
   preSubCnt.textContent = `num : ${preSubNum} result : ${result}`;
 });
 preSubReset.addEventListener('click', () => {
-  preSubNum = 0;
-  let result = preSubNum;
+  preSubNum = 100;
+  let result = 0;
   preSubCnt.textContent = `num : ${preSubNum} result : ${result}`;
 });
 
@@ -146,8 +146,8 @@ posSubBtn.addEventListener('click', () => {
   posSubCnt.textContent = `num : ${posSubNum} result : ${result}`;
 });
 posSubReset.addEventListener('click', () => {
-  posSubNum = 0;
-  let result = posSubNum;
+  posSubNum = 100;
+  let result = 0;
   posSubCnt.textContent = `num : ${posSubNum} result : ${result}`;
 });
 

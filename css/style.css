@@ -48,25 +48,25 @@ button {
 }
 
 .back {
-  width: fit-content;
-  padding: 10px 20px;
-  display: block;
-  border: 1px solid #1e65ff;
-  background-color: #f8faff;
-  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   cursor: pointer;
-  transition: 0.3s;
 }
 .back a {
-  font-size: 15px;
-  color: #1e65ff;
-}
-.back:hover {
-  background-color: #f1f4fc;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrap {
   gap: 20px;
+}
+.wrap h3 {
+  margin-top: 0;
+  position: relative;
 }
 .example ul {
   display: flex;
