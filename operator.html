@@ -44,7 +44,7 @@
         </li>
         <li id="mod">나머지
           <div class="answer">
-            <input type="number" id="modVal1"> / <input type="number" id="modVal2"> = <p class="result"></p>
+            <input type="number" id="modVal1"> % <input type="number" id="modVal2"> = <p class="result"></p>
           </div>
         </li>
       </ul>
@@ -56,63 +56,68 @@
           <div class="answer">
             <button id="preAddBtn">++num</button>
             <button class="reset">Reset</button>
-            <span>num : 0 result : 0</span>
+            <p class="result">num : 0 result : 0</p>
           </div>
         </li>
         <li id="posAdd">후위 증가 연산자
           <div class="answer">
             <button id="posAddBtn">num++</button>
             <button class="reset">Reset</button>
-            <span>num : 0 result : 0</span>
+            <p class="result">num : 0 result : 0</p>
           </div>
         </li>
         <li id="preSub">전위 감소 연산자
           <div class="answer">
             <button id="preSubBtn">--num</button>
             <button class="reset">Reset</button>
-            <span>num : 100 result : 0</span>
+            <p class="result">num : 100 result : 0</p>
           </div>
         </li>
         <li id="posSub">후위 감소 연산자
           <div class="answer">
             <button id="posSubBtn">num--</button>
             <button class="reset">Reset</button>
-            <span>num : 100 result : 0</span>
+            <p class="result">num : 100 result : 0</p>
           </div>
         </li>
       </ul>
     </div>
     <div class="example">
-      <h4>3. 대입 연산자</h4>
+      <h4>3. 산술 대입 연산자</h4>
       <ul>
-        <li id="complex">=
-          <div class="answer">
-            <input type="number" id="comNum"> = <p class="result"></p>
-          </div>
-        </li>
         <li id="comAdd">+=
           <div class="answer">
-            <input type="number" id=""> += <input type="number" id=""><p class="result"></p>
+            <span>0</span>
+            <button id="comAddBtn">+= 10</button>=
+            <p class="result"></p>
           </div>
         </li>
         <li id="comSub">-=
           <div class="answer">
-            <input type="number" id=""> -= <input type="number" id=""><p class="result"></p>
+            <span>100</span>
+            <button id="comSubBtn">-= 10</button>=
+            <p class="result"></p>
           </div>
         </li>
         <li id="comMul">*=
           <div class="answer">
-            <input type="number" id=""> *= <input type="number" id=""><p class="result"></p>
+            <span>2</span>
+            <button id="comMulBtn">*= 2</button>=
+            <p class="result"></p>
           </div>
         </li>
         <li id="comDiv">/=
           <div class="answer">
-            <input type="number" id=""> /= <input type="number" id=""><p class="result"></p>
+            <span>100</span>
+            <button id="comDivBtn">/= 10</button>=
+            <p class="result"></p>
           </div>
         </li>
         <li id="comMod">%=
           <div class="answer">
-            <input type="number" id=""> %= <input type="number" id=""><p class="result"></p>
+            <span>10</span>
+            <button id="comModBtn">%= 7</button>=
+            <p class="result"></p>
           </div>
         </li>
       </ul>
@@ -120,31 +125,45 @@
     <div class="example">
       <h4>4. 비교 연산자</h4>
       <ul>
-        <li>미만 · 초과
-          <div class="answer"></div>
+        <li id="ovUd">초과 · 미만
+          <div class="answer">
+            <input type="number" id="ovUdVal1"> 은 <input type="number" id="ovUdVal2"> 보다 <p class="result"></p>
+          </div>
         </li>
-        <li>이상 · 이하
-          <div class="answer"></div>
+        <li id="mrLs">이상 · 이하
+          <div class="answer">
+            <input type="number" id="mrLsVal1"> 은 <input type="number" id="mrLsVal2"> 보다 <p class="result"></p>
+          </div>
         </li>
-        <li>불완전 비교
-          <div class="answer"></div>
+        <li id="inComparison">불완전 비교
+          <div class="answer">
+            <input type="text" id="inComVal1"> 은 <input type="text" id="inComVal2"> 와 <p class="result"></p>
+          </div>
         </li>
-        <li>완전 비교
-          <div class="answer"></div>
+        <li id="comparison">완전 비교
+          <div class="answer">
+            <input type="text" id="comVal1"> 은 <input type="text" id="comVal2"> 와 <p class="result"></p>
+          </div>
         </li>
       </ul>
     </div>
     <div class="example">
       <h4>5. 논리 연산자</h4>
       <ul>
-        <li>&&
-          <div class="answer"></div>
+        <li id="and">&&
+          <div class="answer">
+            <input type="number" id="andVal"><p class="result"></p>
+          </div>
         </li>
-        <li>||
-          <div class="answer"></div>
+        <li id="or">||
+          <div class="answer">
+            <input type="number" id="orVal"><p class="result"></p>
+          </div>
         </li>
-        <li>!
-          <div class="answer"></div>
+        <li id="not">!
+          <div class="answer">
+            <button>True</button>
+          </div>
         </li>
       </ul>
     </div>
